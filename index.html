@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Tree-Building-Agents_Unity</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1600px; height: 900px; background: #231F20"></canvas>
+    <script src="Build/Tree-Building-Agents_Unity-Clean-WebApp.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Tree-Building-Agents_Unity-Clean-WebApp.data.gz",
+        frameworkUrl: "Build/Tree-Building-Agents_Unity-Clean-WebApp.framework.js.gz",
+        codeUrl: "Build/Tree-Building-Agents_Unity-Clean-WebApp.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Tree-Building-Agents_Unity",
+        productVersion: "0.1",
+      });
+    </script>
+  </body>
+</html>
